@@ -20,8 +20,7 @@ class pwScrapper:
                 'category': anchor['title'],
                 'url': self.BASE_URL + anchor['href'],
                 'movies': self.get_movie_list(self.BASE_URL + anchor['href'])
-            })
-            break
+            }
         return category_list
 
     def get_movie_list(self, URL):
